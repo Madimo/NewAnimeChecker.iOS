@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D843CB4A18698F4400C0612B /* HTTPRequestSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D843CB4918698F4400C0612B /* HTTPRequestSender.m */; };
+		D843CB511869904900C0612B /* AnimeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D843CB501869904900C0612B /* AnimeAPI.m */; };
 		D8D429751869202D000C3F22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429741869202D000C3F22 /* Foundation.framework */; };
 		D8D429771869202D000C3F22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429761869202D000C3F22 /* CoreGraphics.framework */; };
 		D8D429791869202D000C3F22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429781869202D000C3F22 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 		D843CB4C18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		D843CB4D18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D843CB4E18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D843CB4F1869904900C0612B /* AnimeAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeAPI.h; sourceTree = "<group>"; };
+		D843CB501869904900C0612B /* AnimeAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeAPI.m; sourceTree = "<group>"; };
 		D8D429711869202D000C3F22 /* NewAnimeChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewAnimeChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D429741869202D000C3F22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D429761869202D000C3F22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,6 +87,8 @@
 			children = (
 				D843CB4818698F4400C0612B /* HTTPRequestSender.h */,
 				D843CB4918698F4400C0612B /* HTTPRequestSender.m */,
+				D843CB4F1869904900C0612B /* AnimeAPI.h */,
+				D843CB501869904900C0612B /* AnimeAPI.m */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D843CB4A18698F4400C0612B /* HTTPRequestSender.m in Sources */,
+				D843CB511869904900C0612B /* AnimeAPI.m in Sources */,
 				D8D429851869202D000C3F22 /* AppDelegate.m in Sources */,
 				D8D429811869202D000C3F22 /* main.m in Sources */,
 			);
