@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D843CB4A18698F4400C0612B /* HTTPRequestSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D843CB4918698F4400C0612B /* HTTPRequestSender.m */; };
 		D8D429751869202D000C3F22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429741869202D000C3F22 /* Foundation.framework */; };
 		D8D429771869202D000C3F22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429761869202D000C3F22 /* CoreGraphics.framework */; };
 		D8D429791869202D000C3F22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429781869202D000C3F22 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D843CB4818698F4400C0612B /* HTTPRequestSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPRequestSender.h; path = ../HTTPRequestSender.h; sourceTree = "<group>"; };
+		D843CB4918698F4400C0612B /* HTTPRequestSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPRequestSender.m; path = ../HTTPRequestSender.m; sourceTree = "<group>"; };
 		D8D429711869202D000C3F22 /* NewAnimeChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewAnimeChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D429741869202D000C3F22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D429761869202D000C3F22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D843CB4B18698F4E00C0612B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D843CB4818698F4400C0612B /* HTTPRequestSender.h */,
+				D843CB4918698F4400C0612B /* HTTPRequestSender.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		D8D429681869202D000C3F22 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		D8D4297A1869202D000C3F22 /* NewAnimeChecker */ = {
 			isa = PBXGroup;
 			children = (
+				D843CB4B18698F4E00C0612B /* Library */,
 				D8D429831869202D000C3F22 /* AppDelegate.h */,
 				D8D429841869202D000C3F22 /* AppDelegate.m */,
 				D8D429861869202D000C3F22 /* Main.storyboard */,
@@ -255,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D4298E1869202D000C3F22 /* SecondViewController.m in Sources */,
+				D843CB4A18698F4400C0612B /* HTTPRequestSender.m in Sources */,
 				D8D429851869202D000C3F22 /* AppDelegate.m in Sources */,
 				D8D4298B1869202D000C3F22 /* FirstViewController.m in Sources */,
 				D8D429811869202D000C3F22 /* main.m in Sources */,
@@ -466,6 +480,7 @@
 				D8D429A81869202D000C3F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8D429A91869202D000C3F22 /* Build configuration list for PBXNativeTarget "NewAnimeCheckerTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +489,7 @@
 				D8D429AB1869202D000C3F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
