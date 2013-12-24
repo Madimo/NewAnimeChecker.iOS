@@ -36,22 +36,22 @@
 /* Begin PBXFileReference section */
 		D843CB4818698F4400C0612B /* HTTPRequestSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPRequestSender.h; path = ../HTTPRequestSender.h; sourceTree = "<group>"; };
 		D843CB4918698F4400C0612B /* HTTPRequestSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPRequestSender.m; path = ../HTTPRequestSender.m; sourceTree = "<group>"; };
+		D843CB4C18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		D843CB4D18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D843CB4E18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D8D429711869202D000C3F22 /* NewAnimeChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewAnimeChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D429741869202D000C3F22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D429761869202D000C3F22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8D429781869202D000C3F22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8D4297C1869202D000C3F22 /* NewAnimeChecker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewAnimeChecker-Info.plist"; sourceTree = "<group>"; };
-		D8D4297E1869202D000C3F22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8D429801869202D000C3F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8D429821869202D000C3F22 /* NewAnimeChecker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewAnimeChecker-Prefix.pch"; sourceTree = "<group>"; };
 		D8D429831869202D000C3F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8D429841869202D000C3F22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D8D429871869202D000C3F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8D4298F1869202D000C3F22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8D429951869202D000C3F22 /* NewAnimeCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewAnimeCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D429961869202D000C3F22 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8D4299E1869202D000C3F22 /* NewAnimeCheckerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewAnimeCheckerTests-Info.plist"; sourceTree = "<group>"; };
-		D8D429A01869202D000C3F22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8D429A21869202D000C3F22 /* NewAnimeCheckerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewAnimeCheckerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D8D429681869202D000C3F22;
 			productRefGroup = D8D429721869202D000C3F22 /* Products */;
@@ -285,7 +286,7 @@
 		D8D4297D1869202D000C3F22 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8D4297E1869202D000C3F22 /* en */,
+				D843CB4D18698FF600C0612B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -293,7 +294,7 @@
 		D8D429861869202D000C3F22 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8D429871869202D000C3F22 /* Base */,
+				D843CB4C18698FF600C0612B /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -301,7 +302,7 @@
 		D8D4299F1869202D000C3F22 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8D429A01869202D000C3F22 /* en */,
+				D843CB4E18698FF600C0612B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
