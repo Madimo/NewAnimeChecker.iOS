@@ -13,6 +13,7 @@
 }
 
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password;
+- (void)registerWithUsername:(NSString *)username password:(NSString *)password;
 
 - (void)processErrorWithResult:(NSString *)result;
 

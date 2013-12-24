@@ -23,8 +23,21 @@
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password
 {
     @try {
-        NSString *requestUrl = [NSString stringWithFormat:@"http://api2.ricter.info/login?u=%@&p=%@", username, password];
-        NSString *result = [HTTPRequestSender sendGetRequestWithUrl:requestUrl];
+        NSString *url = [NSString stringWithFormat:@"http://api2.ricter.info/login?u=%@&p=%@", username, password];
+        NSString *result = [HTTPRequestSender sendGetRequestWithUrl:url];
+        [self processErrorWithResult:result];
+        key = result;
+    }
+    @catch (NSException *exception) {
+        @throw exception;
+    }
+}
+
+- (void)registerWithUsername:(NSString *)username password:(NSString *)password
+{
+    @try {
+        NSString *url = [NSString stringWithFormat:@"http://api2.ricter.info/reg?u=%@&p=%@", username, password];
+        NSString *result = [HTTPRequestSender sendGetRequestWithUrl:url];
         [self processErrorWithResult:result];
         key = result;
     }
