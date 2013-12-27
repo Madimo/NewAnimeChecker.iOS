@@ -16,6 +16,4 @@
 - (void)registerWithUsername:(NSString *)username password:(NSString *)password;
 - (NSArray *)getSubscriptionList;
 
-- (void)processErrorWithResult:(NSString *)result;
-
 @end

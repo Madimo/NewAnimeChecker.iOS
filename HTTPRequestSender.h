@@ -10,6 +10,7 @@
 
 @interface HTTPRequestSender : NSObject
 
-+ (NSString *)sendGetRequestWithUrl:(NSString *)url;
++ (NSData *)sendGetRequestWithUrl:(NSString *)url;
++ (NSData *)sendPostRequestWithUrl:(NSString *)url dataString:(NSString *)dataString;
 
 @end
