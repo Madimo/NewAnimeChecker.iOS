@@ -32,7 +32,7 @@
         key = json[@"data"][@"key"];
         
         [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
-        [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
+        [[NSUserDefaults standardUserDefaults] setObject:username forKey:@"username"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     @catch (NSException *exception) {
@@ -52,7 +52,7 @@
         key = json[@"data"][@"key"];
         
         [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
-        [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
+        [[NSUserDefaults standardUserDefaults] setObject:username forKey:@"username"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     @catch (NSException *exception) {
@@ -60,9 +60,21 @@
     }
 }
 
-- (NSArray *)getSubscriptionList
+- (NSDictionary *)getUserInfo
 {
-    return nil;
+    @try {
+        NSString *url = [NSString stringWithFormat:@"http://api.ricter.info/get_user_info?key=%@", key];
+        NSData *result = [HTTPRequestSender sendGetRequestWithUrl:url];
+        NSLog(@"%@", [[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding]);
+
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:result options:kNilOptions error:nil];
+        [self processErrorWithJson:json];
+        
+        return json[@"data"];
+    }
+    @catch (NSException *exception) {
+        @throw exception;
+    }
 }
 
 

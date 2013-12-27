@@ -15,6 +15,7 @@
 {
     // Override point for customization after application launch.
     AnimeAPI *api = [[AnimeAPI alloc] init];
+    [api getUserInfo];
     return YES;
 }
 							

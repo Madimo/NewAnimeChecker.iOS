@@ -14,6 +14,6 @@
 
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password;
 - (void)registerWithUsername:(NSString *)username password:(NSString *)password;
-- (NSArray *)getSubscriptionList;
+- (NSDictionary *)getUserInfo;
 
 @end
