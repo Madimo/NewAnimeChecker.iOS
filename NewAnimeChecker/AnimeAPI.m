@@ -30,6 +30,10 @@
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:result options:kNilOptions error:nil];
         [self processErrorWithJson:json];
         key = json[@"data"][@"key"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
+        [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     @catch (NSException *exception) {
         @throw exception;
@@ -38,7 +42,22 @@
 
 - (void)registerWithUsername:(NSString *)username password:(NSString *)password
 {
-
+    @try {
+        NSString *dataString = [NSString stringWithFormat:@"u=%@&p=%@", username, password];
+        NSData *result = [HTTPRequestSender sendPostRequestWithUrl:@"http://api.ricter.info/reg" dataString:dataString];
+        NSLog(@"%@", [[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding]);
+        
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:result options:kNilOptions error:nil];
+        [self processErrorWithJson:json];
+        key = json[@"data"][@"key"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
+        [[NSUserDefaults standardUserDefaults] setObject:key forKey:@"key"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    @catch (NSException *exception) {
+        @throw exception;
+    }
 }
 
 - (NSArray *)getSubscriptionList
@@ -49,7 +68,6 @@
 
 - (void)processErrorWithJson:(NSDictionary *)json
 {
-    NSLog(@"%@", json[@"status"]);
     if ([json[@"status"] intValue] != 200) {
         @throw [[NSException alloc] initWithName:@"APIReturnError" reason:json[@"message"] userInfo:nil];
     }
