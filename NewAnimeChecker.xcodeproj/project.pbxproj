@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D843CB4A18698F4400C0612B /* HTTPRequestSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D843CB4918698F4400C0612B /* HTTPRequestSender.m */; };
 		D843CB511869904900C0612B /* AnimeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D843CB501869904900C0612B /* AnimeAPI.m */; };
 		D8D429751869202D000C3F22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429741869202D000C3F22 /* Foundation.framework */; };
 		D8D429771869202D000C3F22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429761869202D000C3F22 /* CoreGraphics.framework */; };
@@ -22,6 +21,8 @@
 		D8D429991869202D000C3F22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D429781869202D000C3F22 /* UIKit.framework */; };
 		D8D429A11869202D000C3F22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D4299F1869202D000C3F22 /* InfoPlist.strings */; };
 		D8D429A31869202D000C3F22 /* NewAnimeCheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D429A21869202D000C3F22 /* NewAnimeCheckerTests.m */; };
+		D8FE9E7D186D98A2003C5D0F /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FE9E7C186D98A2003C5D0F /* LoginView.m */; };
+		D8FE9E80186D98C5003C5D0F /* HTTPRequestSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FE9E7F186D98C5003C5D0F /* HTTPRequestSender.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D843CB4818698F4400C0612B /* HTTPRequestSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPRequestSender.h; path = ../HTTPRequestSender.h; sourceTree = "<group>"; };
-		D843CB4918698F4400C0612B /* HTTPRequestSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPRequestSender.m; path = ../HTTPRequestSender.m; sourceTree = "<group>"; };
 		D843CB4C18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		D843CB4D18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D843CB4E18698FF600C0612B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -56,6 +55,10 @@
 		D8D429961869202D000C3F22 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8D4299E1869202D000C3F22 /* NewAnimeCheckerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewAnimeCheckerTests-Info.plist"; sourceTree = "<group>"; };
 		D8D429A21869202D000C3F22 /* NewAnimeCheckerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewAnimeCheckerTests.m; sourceTree = "<group>"; };
+		D8FE9E7B186D98A2003C5D0F /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		D8FE9E7C186D98A2003C5D0F /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		D8FE9E7E186D98C5003C5D0F /* HTTPRequestSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestSender.h; sourceTree = "<group>"; };
+		D8FE9E7F186D98C5003C5D0F /* HTTPRequestSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestSender.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +88,8 @@
 		D843CB4B18698F4E00C0612B /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				D843CB4818698F4400C0612B /* HTTPRequestSender.h */,
-				D843CB4918698F4400C0612B /* HTTPRequestSender.m */,
+				D8FE9E7E186D98C5003C5D0F /* HTTPRequestSender.h */,
+				D8FE9E7F186D98C5003C5D0F /* HTTPRequestSender.m */,
 				D843CB4F1869904900C0612B /* AnimeAPI.h */,
 				D843CB501869904900C0612B /* AnimeAPI.m */,
 			);
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D843CB4B18698F4E00C0612B /* Library */,
+				D8FE9E81186D98CF003C5D0F /* LoginView */,
 				D8D429831869202D000C3F22 /* AppDelegate.h */,
 				D8D429841869202D000C3F22 /* AppDelegate.m */,
 				D8D429861869202D000C3F22 /* Main.storyboard */,
@@ -163,6 +167,15 @@
 				D8D4299F1869202D000C3F22 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8FE9E81186D98CF003C5D0F /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				D8FE9E7B186D98A2003C5D0F /* LoginView.h */,
+				D8FE9E7C186D98A2003C5D0F /* LoginView.m */,
+			);
+			name = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D843CB4A18698F4400C0612B /* HTTPRequestSender.m in Sources */,
 				D843CB511869904900C0612B /* AnimeAPI.m in Sources */,
+				D8FE9E80186D98C5003C5D0F /* HTTPRequestSender.m in Sources */,
 				D8D429851869202D000C3F22 /* AppDelegate.m in Sources */,
+				D8FE9E7D186D98A2003C5D0F /* LoginView.m in Sources */,
 				D8D429811869202D000C3F22 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
